@@ -339,8 +339,15 @@ div.inn{
 .footer{
   margin-top: 25px;
   margin-bottom: 10px;  
-  flex-wrap: nowrap;
+  /* commented the below flex wrap cause its not a flex container */
+  /* flex-wrap: nowrap; */
+  position: absolute;
+  width: 100vw;
+  bottom: 0;
+}
 
+.footer-ul li>a{
+  cursor: pointer;
 }
 
 ul.footer-ul {
